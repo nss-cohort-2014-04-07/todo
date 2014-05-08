@@ -7,7 +7,15 @@ html
     link(href='/css/buttons.css', rel='stylesheet')
     link(href='/less/app.css', rel='stylesheet')
   body
-    block content
+    header
+      h1 Node.js ToDo
+    nav
+      span: a(href='/') Home
+      span: a(href='/tasks') Tasks
+      span: a(href='/priorities') Priorities
+
+    #content
+      block content
 
     script(src='/js/vendor/jquery-2.1.1.js')
     script(src='/js/vendor/lodash-2.4.1.js')
